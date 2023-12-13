@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Kanit:wght@200&family=Lobster&family=Silkscreen&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Kanit:wght@200&family=Lobster&family=Silkscreen&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="./js/index.js" type="module" defer></script>
+    <title>Calculadora de Media PUC</title>
+</head>
+
+<body>
+    <header>
+        <div class="tittle">
+            <h1>Calculadora de Media</h1>
+            <h2>Vai usar calculadora de outro homi n amor!! Eu hein...</h2>
+        </div>
+    </header>
+
+    <div class="form">
+
+        <!-- Notas N1 -->
+        <div class="n1">
+            <h2>N1</h2>
+            <input type="text" placeholder="Primeira Nota n1:" class="inserirNota" id="inputNota1n1">
+            <br><br>
+            <input type="text" placeholder="Segunda Nota n1:" class="inserirNota" id="inputNota2n1">
+            <br><br>
+            <input type="text" id="mediaN1" placeholder="Media N1: " readonly>
+        </div>
+
+
+        <!-- Notas N2 -->
+        <div class="n2">
+            <h2>N2</h2>
+            <input type="text" placeholder="Primeira Nota n2:" class="inserirNota" id="inputNota1n2">
+            <br><br>
+            <input type="text" placeholder="Segunda Nota n2:" class="inserirNota" id="inputNota2n2">
+            <br><br>
+            <input type="text" id="mediaN2" placeholder="Media N2:" readonly>
+            <br><br>
+            <input type="text" placeholder="Nota da AI:" class="inserirNota" id="inputNotaAI">
+            <br><br>
+        </div>
+
+        <!-- Media Final -->
+        <div class="Final">
+            <h2>Media Final: </h2>
+            <input type="text" placeholder="Resultado: " id="MediaFinal" readonly>
+            <br><br>
+
+            <div class="ResetButton">
+                <button id="resetButton">Resetar</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="foto">
+        <img src="./images/fotoNossa.jpeg">
+    </div>
+
+
+</body>
+
+</html>
