@@ -76,6 +76,7 @@ resetButton.addEventListener('click', function (ev) {
     MediaN1.value = ''
     MediaN2.value = ''
     NotaAI.value = ''
+    MediaFinal.value = ''
 })
 
 inputNota1n1.addEventListener('keydown', function (ev) {
