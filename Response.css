@@ -81,8 +81,9 @@
         margin: 20px 0 0 40px; 
     }
 
-    button:hover{
+    button{
         background-color: #fb8500;
         border: none;
+        color: #023047
     }
 }
