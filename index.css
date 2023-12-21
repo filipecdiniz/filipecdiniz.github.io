@@ -1,81 +1,4 @@
-@media screen and (max-width: 768){
-    * {
-        background-color: #fefae0;
-        /* padding: 10px; */
-    }
-    
-    body {
-        /* background-color: blue; */
-        /* border: solid; */
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
-    
-    .tittle {
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        align-items: center;
-        justify-content: center;
-        /* background-color: red; */
-    }
-    
-    .tittle h1 {
-        font-family: 'Silkscreen', cursive;
-        font-size: 40px;
-        color: #023047;
-        /* background-color: red; */
-    }
-    
-    .tittle h2 {
-        /* font-family: 'Silkscreen', cursive; */
-        font-size: 20px;
-        color: #fb8500;
-    }
-    
-    h2 {
-        font-size: 20px;
-        color: #fb8500;
-        /* margin-bottom: 50px; */
-    }
-    
-    .form {
-        /* background-color: #a2d2ff; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%; /* Ajuste a largura conforme necessário */
-        max-width: 600px; /* Adicionado uma largura máxima para telas maiores */
-        margin: 0 auto; /* Centraliza o formulário na tela */
-        padding: 20px; /* Adiciona algum espaçamento interno ao formulário */
-        border: solid black 1px;
-        box-sizing: border-box; /* Garante que a largura inclua as bordas e o preenchimento */
-    }
-    
-    input {
-        border: none;
-        border-radius: 7%;
-        background-color: white;
-        color: red;
-        padding: 10px; /* Adiciona algum espaçamento interno aos inputs */
-        margin-bottom: 10px; /* Adiciona algum espaçamento entre os inputs */
-    }
-    
-    .ResetButton {
-        margin-left: 40px;
-        /* background-color: red; */
-    }
-    
-    .foto img {
-        width: 100%; /* Ajusta a largura da imagem para preencher o contêiner pai */
-        max-width: 1000px; /* Adiciona uma largura máxima para telas maiores */
-        height: auto; /* Mantém a proporção da imagem */
-        margin: 20px 0; /* Adiciona algum espaçamento acima e abaixo da imagem */
-    }
-     
-}
+/* Tamanho padrão que ele irá utilizar */
 
 *{
     background-color: #fefae0;
@@ -124,18 +47,18 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 700px;
+    height: 500px;
     margin-left: 400px;
     border: solid black 1px;
 }
 
-
-
 input {
     border: none;
     border-radius: 7%;
+    height: 20px;
     background-color: white;
-    color: red;
+    color: #023047;
 }
 
 .ResetButton {
@@ -144,9 +67,104 @@ input {
 }
 
 .foto img {
-    width: 50%;
-    height: 600px;
+    /* width: 50%; */
+    width: 700px;
+    height: 550px;
     margin-left: 400px;
     /* margin-left: 100px; */
     /* margin-bottom: 50px; */
+}
+
+button:hover{
+    background-color: #fb8500;
+    border: none;
+}
+
+/* Configuração que irá utilizar caso atinga 450px de max-width => */
+
+@media screen and (max-width: 450px){   
+    * {
+        background-color: #fefae0;
+        /* padding: 10px; */
+    }
+
+    body {
+        /* background-color: blue; */
+        /* border: solid; */
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .tittle {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+        padding: 10px;
+        /* background-color: red; */
+    }
+
+    .tittle h1 {
+        font-family: 'Silkscreen', cursive;
+        font-size: 40px;
+        color: #023047;
+        /* z-index: -1; */
+        /* background-color: red; */
+    }
+
+    .tittle h2 {
+        font-family: 'Silkscreen', cursive;
+        font-size: 15px;
+        color: #fb8500;
+        /* margin-bottom: 40px; */
+        /* background-color: red; */
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #fb8500;
+        /* margin-bottom: 50px; */
+    }
+
+    .form {
+        /* background-color: #a2d2ff; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px; 
+        border: solid black 1px;
+        box-sizing: border-box; 
+    }
+
+    input {
+        border: none;
+        border-radius: 7%;
+        background-color: white;
+        color: #023047;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ResetButton {
+        margin-left: 40px;
+        /* background-color: red; */
+    }
+
+    .foto img {
+        width: 80%;
+        max-width: 1000px; 
+        height: auto; 
+        margin: 20px 0 0 40px; 
+    }
+
+    button:hover{
+        background-color: #fb8500;
+        border: none;
+    }
 }
